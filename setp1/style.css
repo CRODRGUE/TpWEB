@@ -1,0 +1,35 @@
+body{
+    background-image: url(../image/couloir.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contaire{
+    margin-top: 100px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+#texte{
+    width: 1000px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 17px 10px 5px black;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color:black;
+    text-align: center;
+}
+#chose{
+    width: 1000px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.picture{
+    box-shadow: 17px 10px 5px black;
+    border-radius: 7.5%;
+    width: 275px;
+    height: 375px;
+}

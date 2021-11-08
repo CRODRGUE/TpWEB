@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+}
+
+#texte{
+    width: 1000px;
+    height: auto;
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 17px 10px 5px black;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color:black;
+    text-align: center;
+}
+
+#link{
+    background-image: url('image/accYnov.png');
+    background-size: cover;
+    height: 800px;
+    width: 1540px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pic{
+    opacity: 0; 
+    height: 752px;
+    width: 1540px;
+}
+
+#ok{
+    visibility: hidden;
+}
