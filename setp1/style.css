@@ -3,7 +3,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.contaire{
+.containre{
     margin-top: 100px;
     display: flex;
     flex-flow: column nowrap;
