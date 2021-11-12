@@ -3,19 +3,21 @@
     padding: 0;
 }
 body{
+    width: 100vw;
+    height: 100vh;
     background-image: url(../image/toilette.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .containre{
-    margin: 100px 20px 0px 0px;
+    margin: 5vh 5vw 0 0;
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-end;
     
 }
 #texte{
-    width: 1000px;
+    width: 65vw;
     height: auto;
     border: 1px solid black;
     border-radius: 10px;
@@ -27,7 +29,7 @@ body{
     text-align: center;
 }
 .chose{
-    width: 1000px;
+    width: 65vw;
     height: auto;
     display: flex;
     justify-content: space-around;
@@ -41,8 +43,8 @@ body{
 .picture{
     box-shadow: 17px 10px 5px black;
     border-radius: 7.5%;
-    width: 275px;
-    height: 375px;
+    width: 20vw;
+    height: 50vh;
 }
 
 #bubble{
@@ -61,4 +63,33 @@ body{
     height: 60px;
     width: 150px;
     padding: 5px;
+}
+
+@media screen and (max-width: 500px) {
+
+    .containre{
+        align-items: center;
+    }
+    #texte{
+        width: 85vw;
+        height: auto;
+    }
+
+    .underTitle{
+        width: 35vw;
+        height: auto;
+        margin: 0;
+        text-align: center;
+    }
+
+    .chose{
+        width: 85vw;
+        justify-content: space-between;
+        margin-top: 5vh;
+    }
+
+    .picture{
+        width: 35vw;
+        height: 40vh;
+    }
 }

@@ -1,4 +1,6 @@
 body{
+    width: 100vw;
+    height: 100vh;
     background-image: url(../image/couloir.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,7 +12,7 @@ body{
     align-items: center;
 }
 #texte{
-    width: 1000px;
+    width: 75vw;
     height: auto;
     border: 1px solid black;
     border-radius: 10px;
@@ -22,14 +24,36 @@ body{
     text-align: center;
 }
 #chose{
-    width: 1000px;
+    width: 85vw;
     height: auto;
+    margin-top: 20px;
     display: flex;
     justify-content: space-around;
 }
 .picture{
     box-shadow: 17px 10px 5px black;
     border-radius: 7.5%;
-    width: 275px;
-    height: 375px;
+    width: 20vw;
+    height: 40vh;
+}
+
+@media screen and (max-width:500px){
+    .containre{
+        margin-top: 15px;
+    }
+
+    #texte{
+        width: 85vw;
+        height: auto;
+    }
+
+    #chose{
+        justify-content: space-between;
+        margin-top: 5vh;
+    }
+
+    .picture{
+        width: 35vw;
+        height: 40vh;
+    }
 }

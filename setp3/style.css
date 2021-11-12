@@ -3,22 +3,22 @@
     padding: 0;
 }
 body{
+    width: 100vw;
+    height: 100vh;
     background-image: url(../image/setp3.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1540px;
-    height: 800px;
     display: flex;
     justify-content: center;
 }
 .containre{
-    margin-top: 100px;
+    margin-top: 5vh;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
 }
 #texte{
-    width: 1000px;
+    width: 75vw;
     height: auto;
     border: 1px solid black;
     border-radius: 10px;
@@ -30,7 +30,7 @@ body{
     text-align: center;
 }
 .chose{
-    width: 1000px;
+    width: 85vw;
     height: auto;
     display: flex;
     justify-content: space-around;
@@ -47,6 +47,34 @@ body{
 .picture{
     box-shadow: 17px 10px 5px black;
     border-radius: 7.5%;
-    width: 275px;
-    height: 375px;
+    width: 20vw;
+    height: 50vh;
+}
+
+@media screen and (max-width:500px){
+    .containre{
+        margin-top: 5vh;
+    }
+
+    #texte{
+        width: 85vw;
+        height: auto;
+    }
+
+    .underTitle{
+        width: 35vw;
+        height: auto;
+        margin: 0;
+        text-align: center;
+    }
+
+    .chose{
+        justify-content: space-between;
+        margin-top: 5vh;
+    }
+
+    .picture{
+        width: 35vw;
+        height: 40vh;
+    }
 }

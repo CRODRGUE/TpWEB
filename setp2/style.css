@@ -1,16 +1,16 @@
 body{
+    width: 100vw;
+    height: 100vh;
     margin: 0;
     background-color: #978f82;
 }
 .containre{
-    height: 800px;
-    width: 1540px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center; 
 }
 #texte{
-    width: 1000px;
+    width: 60vw;
     height: auto;
     position: fixed;
     z-index: 2;
@@ -25,6 +25,27 @@ body{
 }
 #chose{
     z-index: 1;
-    width: 100%;
-    height: 95%;
+    width: 100vw;
+    height: 100vh;
+}
+
+.picture{
+    width: 100vw;
+    height: 100vh;
+}
+
+@media screen and (max-width:500px){
+    #texte{
+        width: 80vw;
+    }
+
+    .picture{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .txtA6::after{
+        content: "Tu peux chercher en te baladant sur l'écran.";
+        color: #187ce0;
+    }
 }
